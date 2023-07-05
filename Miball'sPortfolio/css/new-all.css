@@ -80,8 +80,16 @@ h3 {
 .big_img img,
 .big_img video {
     width: 100%;
+    
 }
+.big_img{
+    display: flex;
+    justify-content: center;
+}
+iframe{
+    max-width: 100%;
 
+}
 
 .title {
     background-color: #61747E;
