@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miball's portfolio</title>
+    <link rel="icon" href="img/LOGO-1.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/new-all.css">
+</head>
+<style>
+    .container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .image-container {
+        box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.285);
+        width: 250px;
+        height: 250px;
+        position: relative;
+        margin: 10px;
+        transition: width 0.3s, height 0.3s;
+    }
+
+    .image-container.zoomed {
+        width: 100%;
+        height: 100%;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        filter: grayscale(100%);
+        cursor: pointer;
+       
+    }
+
+    .image-container img:hover {
+        filter: grayscale(0%);
+    }
+    .image-container.zoomed img{
+        filter: grayscale(0%);
+        
+        padding: 0;
+        margin: 0;
+    }
+
+    @media (max-width:600px) {
+        .image-container img {
+            filter: grayscale(0%);
+
+        }
+    }
+</style>
+<script>
+    function big(container) {
+        container.classList.toggle('zoomed');
+    }
+</script>
+
+<body>
+    <div class="title">
+        <div class="two">
+            <a href="index.html"><img src="img/LOGO-1.jpg" alt="" class="logo"></a>
+        <span class="title-text">電腦繪圖</span>
+        </div>
+    </div>
+
+    <div class="about">
+        <div class="con_box">
+            <h3 class="con_box-title">Photoshop/&nbspIllustrator/&nbspProcreate/&nbspMediBang<br>《電腦繪圖》<br><br></h3>
+            <p><br>使用不同軟體繪製不同風格的圖讓我覺得很有趣。</p>
+
+        </div>
+        <div class="container">
+            <div class="image-container" onclick="big(this)">
+                <img src="img/img-16.jpg" alt="" class="dd">
+            </div>
+            <div class="image-container" onclick="big(this)">
+                <img src="img/img-15.jpg" alt="" class="dd">
+            </div>
+            <div class="image-container" onclick="big(this)">
+                <img src="img/img-14.jpg" alt="" class="dd">
+            </div>
+            <div class="image-container" onclick="big(this)">
+                <img src="img/img-13.jpg" alt="" class="dd">
+            </div>
+            <div class="image-container" onclick="big(this)">
+                <img src="img/img-12.png" alt="" class="dd">
+            </div>
+            <div class="image-container" onclick="big(this)">
+                <img src="img/img-11.png" alt="" class="dd">
+            </div>
+            <div class="image-container" onclick="big(this)">
+                <img src="img/img-10.JPG" alt="" class="dd">
+            </div>
+            <div class="image-container" onclick="big(this)">
+                <img src="img/img-9.jpg" alt="" class="dd">
+            </div>
+            <div class="image-container" onclick="big(this)">
+                <img src="img/img-8.JPG" alt="" class="dd">
+            </div>
+            <div class="image-container" onclick="big(this)">
+                <img src="img/img-7.jpg" alt="" class="dd">
+            </div>
+            <div class="image-container" onclick="big(this)">
+                <img src="img/img-6.JPG" alt="" class="dd">
+            </div>
+            <div class="image-container" onclick="big(this)">
+                <img src="img/img-5.jpg" alt="" class="dd">
+            </div>
+            <div class="image-container" onclick="big(this)">
+                <img src="img/img-4.jpg" alt="" class="dd">
+            </div>
+
+            <div class="image-container" onclick="big(this)">
+                <img src="img/img-3.jpg" alt="" class="dd">
+            </div>
+            <div class="image-container" onclick="big(this)">
+                <img src="img/img-2.jpg" alt="" class="dd">
+            </div>
+            <div class="image-container" onclick="big(this)">
+                <img src="img/img-1.jpg" alt="" class="dd">
+            </div>
+        </div>
+
+    </div>
+    <a href="index.html">
+        <div class="footer">
+            <p class="back">回首頁</p>
+          </div>
+        </a>
+</body>
+
+</html>

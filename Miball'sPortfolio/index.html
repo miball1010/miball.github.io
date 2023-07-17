@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miball's portfolio</title>
+  <link rel="icon" href="img/LOGO-1.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="css/new-all.css">
+</head>
+<style>
+  .title-img {
+    position: relative;
+  }
+  .logo {
+    width: 60px;
+    border-radius: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+  .text {
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 6;
+    font-weight: bolder;
+    text-shadow: 0 0 0.2em rgb(255, 255, 119);
+    transform: translate(-50%, -50%);
+    border: white double 5px;
+    padding: 70px;
+  }
+
+
+  .myImg {
+    background-image: url(img/me.jpg);
+    width: 300px;
+    height: 300px;
+    background-size: 300px;
+    display: inline-block;
+    border: #c0d4de 5px outset;
+  }
+
+  .regarding {
+    text-align: center;
+  }
+
+  .regarding p {
+    margin: 0;
+    padding: 0;
+  }
+
+  .skill {
+    margin: 20px 0;
+    padding: 20px;
+    text-align: center;
+    border: 3px dotted rgba(176, 176, 42, 0.371);
+    border-radius: 50px 0 ;
+  }
+
+  .skill div {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 50px;
+  }
+
+  .bottom div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .image-container {
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.285);
+    width: 250px;
+    height: 250px;
+    position: relative;
+    margin: 10px;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: white;
+  }
+
+
+  .image-container:hover .overlay,
+  .image-container:hover .text-overlay {
+    opacity: 1;
+    cursor: pointer;
+  }
+.me{
+  padding: 10px;
+}
+
+
+  @media (max-width:600px) {
+    .text {
+      padding: 10px;
+    }
+
+    .about .top div {
+      margin: 10px 10px;
+    }
+
+    .overlay,
+    .text-overlay {
+      opacity: 1;
+    }
+  }
+</style>
+
+<body>
+
+  <div class="title">
+    <a href="index.html"><img src="img/LOGO-1.jpg" alt="" class="logo"></a>
+  </div>
+
+  <div class="title-img">
+    <img src="img/bg.jpg" alt="" style=" width: 100%;">
+    <div class="text">Miball's portfolio</div>
+  </div>
+
+  <div class="about">
+    <div class="top">
+      <div class="myImg"></div>
+      <div>
+        <h3 class="H"><b>張亞芸<br> YA-YUN-CHANG</b></h3><br>
+        <h4> <span class="H">|學歷</span>&nbsp元智大學 資訊傳播學系 科技組</h4>
+        <h4> <span class="H">|工作經歷</span>&nbsp鶯歌陶瓷博物館 教推組實習生</h4>
+        <h4> <span class="H">|社團經歷</span>&nbsp輔導義工 關懷組副組長</h4>
+        <h4> <span class="H">|駕照</span>&nbsp汽車</h4>
+        <h4> <span class="H">|專長</span>&nbsp畫畫</h4>
+        <h4> <span class="H">|興趣</span>&nbsp看日劇、玩電玩</h4>
+      </div>
+    </div>
+
+    <div class="middle">
+
+      <div class="skill">
+        <div>
+          <p><span class="H"> |程式</span> <br> Unity<br>C++<br> C# <br> HTML <br> CSS <br>Javascript</p>
+        </div>
+        <div>
+          <p><span class="H"> |設計</span> <br> Photoshop<br>Illustrator<br>Premiere Pro<br>After Effects <br>Figma<br>Blender</p>
+        </div>
+        <div>
+          <p><span class="H"> |外語</span><br> 英語 多益615分 <br> 日語</p>
+        </div>
+      </div>
+
+      <div class="me">
+        <p>&nbsp&nbsp
+          大學期間最想要做的是加入服務性質的社團，我在這段期間籌劃社團博覽會及團內聖誕趴的活動，從中學到如何撰寫企劃書、招募工作人員、安排工作內容，並按時開會監督，最後在活動結束後進行檢討，有效的分工合作能使團內氣氛更好。</p>
+        <br>
+        <p>&nbsp&nbsp
+          從2020年1月持續到現在，我在蝦皮販售二手物共得到149顆五星及2顆四星，從中學會如何與客人溝通及判斷殺價是否合理，而客人給予用心包裝、出貨快速等的正向回饋，讓我覺得能夠將自己不需要的東西傳給下一個會珍惜的人很好。</p>
+  
+      </div>
+      
+    </div>
+
+    <div class="bottom">
+
+      <div class="image-container">
+        <a href="fyp.html">
+          <img src="img/FYP-2.jpg" alt="">
+          <div class="overlay"></div>
+          <div class="text-overlay">
+            <span>◊ 畢業製作 ◊</span>
+          </div>
+        </a>
+      </div>
+      <div class="image-container">
+        <a href="practice.html">
+          <img src="img/practice-3.jpg" alt="">
+          <div class="overlay"></div>
+          <div class="text-overlay">
+            <span>◊ 實習 ◊</span>
+          </div>
+        </a>
+      </div>
+      <div class="image-container">
+        <a href="unity.html">
+          <img src="img/unity-3.png" alt="">
+
+          <div class="overlay"></div>
+          <div class="text-overlay">
+            <span>◊ 遊戲設計 ◊</span>
+          </div>
+        </a>
+      </div>
+      <div class="image-container">
+        <a href="web.html">
+          <img src="img/web-2.png" alt="">
+          <div class="overlay"></div>
+          <div class="text-overlay">
+            <span>◊ 網頁設計 ◊</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="image-container">
+        <a href="uxui.html">
+          <img src="img/uxui-1.jpg" alt="">
+          <div class="overlay"></div>
+          <div class="text-overlay">
+            <span>◊ UX/UI ◊</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="image-container">
+        <a href="drew.html">
+          <img src="img/img-15.jpg" alt="">
+          <div class="overlay"></div>
+          <div class="text-overlay">
+            <span>◊ 電腦繪圖 ◊</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="image-container">
+        <a href="3d.html">
+          <img src="img/3d-1.jpg" alt="">
+          <div class="overlay"></div>
+          <div class="text-overlay">
+            <span>◊ 3D建模 ◊</span>
+          </div>
+        </a>
+      </div>
+
+      
+
+    </div>
+  </div>
+  <div class="footer">
+    <p>✉️407boo@gmail.com</p>
+  </div>
+
+</body>
+
+</html>

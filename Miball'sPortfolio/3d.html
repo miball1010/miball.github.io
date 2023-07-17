@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miball's portfolio</title>
+    <link rel="icon" href="img/LOGO-1.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/new-all.css">
+</head>
+<style>
+    .container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .image-container {
+        box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.285);
+        width: 250px;
+        height: 250px;
+        position: relative;
+        margin: 10px;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .overlay {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .text-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        opacity: 0;
+    }
+
+    .image-container:hover .text-overlay,
+    .image-container:hover .overlay {
+        opacity: 1;
+        cursor: pointer;
+    }
+</style>
+<script>
+
+    function change(imageId) {
+        if (imageId === 'd1') {
+            document.getElementById("3dimg").src = "img/3d-1.jpg";
+        }
+        else if (imageId === 'd2') {
+            document.getElementById("3dimg").src = "img/3d-2.jpg";
+        }
+        else if (imageId === 'd3') {
+            document.getElementById("3dimg").src = "img/3d-3.jpg";
+        }
+        else if (imageId === 'd4') {
+            document.getElementById("3dimg").src = "img/3d-4.jpg";
+        }
+        else if (imageId === 'd6') {
+            document.getElementById("3dimg").src = "img/3d-6.jpg";
+        }
+        else if (imageId === 'd7') {
+            document.getElementById("3dimg").src = "img/3d-7.jpg";
+        }
+        else if (imageId === 'd8') {
+            document.getElementById("3dimg").src = "img/3d-8.jpg";
+        }
+        else if (imageId === 'd9') {
+            document.getElementById("3dimg").src = "img/3d-9.png";
+        }
+        else if (imageId === 'd10') {
+            document.getElementById("3dimg").src = "img/3d-10.png";
+        }
+    }
+</script>
+
+<body>
+    <div class="title">
+        <div class="two">
+            <a href="index.html"><img src="img/LOGO-1.jpg" alt="" class="logo"></a>
+        <span class="title-text">3D建模</span>
+        </div>
+    </div>
+
+    <div class="about">
+        <div class="con_box">
+            <h3 class="con_box-title">Blender<br>《射藍莓大賽》<br><br></h3>
+
+
+            <p><br>
+                熊熊小精靈們用最喜歡的水果一決勝負，熊熊隊究竟最後能不能贏過蘋果隊呢!? <br>
+                <br>使用Blender製作，最後再用Photoshop合成3D物件及背景圖片，會想要做熊是因為我很喜歡熊。<br>
+                熊熊隊射擊技術有待加強，但也有熊不放棄的加油，也有熊為隊友打抱不平，還有熊想要偷作弊。
+                蘋果隊準確率高，但是會嘲笑別的熊，很像調皮的搗蛋鬼。
+            </p>
+            </p>
+        </div>
+        <div class="big_img"><img src="img/3d-1.jpg" alt="" id="3dimg"></div>
+        <div class="container">
+
+            <div class="image-container">
+                <a href="#3dimg" id="d1" onclick="change('d1')">
+                    <img src="img/3d-1.jpg" alt="">
+                    <div class="overlay"></div>
+                    <div class="text-overlay">
+                        <span>◊ 完成圖 ◊</span>
+                    </div>
+                </a>
+            </div>
+            <div class="image-container">
+                <a href="#3dimg" id="d2" onclick="change('d2')">
+                    <img src="img/3d-2.jpg" alt="">
+                    <div class="overlay"></div>
+                    <div class="text-overlay">
+                        <span>◊ 角色設定 ◊</span>
+                    </div>
+                </a>
+            </div>
+            <div class="image-container">
+                <a href="#3dimg" id="d3" onclick="change('d3')">
+                    <img src="img/3d-3.jpg" alt="">
+                    <div class="overlay"></div>
+                    <div class="text-overlay">
+                        <span>◊ 場景草圖 ◊</span>
+                    </div>
+                </a>
+            </div>
+            <div class="image-container">
+                <a href="#3dimg" id="d4" onclick="change('d4')">
+                    <img src="img/3d-4.jpg" alt="">
+                    <div class="overlay"></div>
+                    <div class="text-overlay">
+                        <span>◊ 未採用 ◊</span>
+                    </div>
+                </a>
+            </div>
+            <div class="image-container">
+                <a href="#3dimg" id="d6" onclick="change('d6')">
+                    <img src="img/3d-6.jpg" alt="">
+                    <div class="overlay"></div>
+                    <div class="text-overlay">
+                        <span>◊ 初稿 ◊</span>
+                    </div>
+                </a>
+            </div>
+            <div class="image-container">
+                <a href="#3dimg" id="d7" onclick="change('d7')">
+                    <img src="img/3d-7.jpg" alt="">
+                    <div class="overlay"></div>
+                    <div class="text-overlay">
+                        <span>◊ 二稿 ◊</span>
+                    </div>
+                </a>
+            </div>
+            <div class="image-container">
+                <a href="#3dimg" id="d8" onclick="change('d8')">
+                    <img src="img/3d-8.jpg" alt="">
+                    <div class="overlay"></div>
+                    <div class="text-overlay">
+                        <span>◊ 已後製過背景 ◊</span>
+                    </div>
+                </a>
+            </div>
+            <div class="image-container">
+                <a href="#3dimg" id="d9" onclick="change('d9')">
+                    <img src="img/3d-9.png" alt="">
+                    <div class="overlay"></div>
+                    <div class="text-overlay">
+                        <span>◊ Wireframe ◊</span>
+                    </div>
+                </a>
+            </div>
+            <div class="image-container">
+                <a href="#3dimg" id="d10" onclick="change('d10')">
+                    <img src="img/3d-10.png" alt="">
+                    <div class="overlay"></div>
+                    <div class="text-overlay">
+                        <span>◊ 搭建完稿 ◊</span>
+                    </div>
+                </a>
+            </div>
+
+
+        </div>
+        <div style="text-align: center; display: flex; justify-content: center;">
+            <a href="https://store.line.me/stickershop/product/15722914/zh-Hant?utm_source=gnsh_stickerDetail"
+                target="_blank" style="text-decoration: none;">
+                <div class="button">→Line貼圖連結</div>
+            </a>
+        </div>
+
+    </div>
+    </div>
+    <a href="index.html">
+        <div class="footer">
+            <p class="back">回首頁</p>
+          </div>
+        </a>
+
+</body>
+
+</html>

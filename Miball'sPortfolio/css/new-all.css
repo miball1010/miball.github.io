@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/bg-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.footer {
+    background-color: rgb(86, 86, 86);
+    width: 100%;
+    height: 100px;
+    position: relative;
+    margin-top: 10px;
+}
+
+.footer:hover .back {
+    text-shadow: 0 0 0.2em rgb(255, 255, 255);
+  
+}
+
+.footer p{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    font-family: "微軟正黑體";
+    color: #525252;
+}
+
+.about {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.about .top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .top div {
+    margin: 30px 10px 0 10px;
+}
+
+.about .top h4 {
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+.con_box {
+    background-color: #7b929e9f;
+    padding: 20px 0;
+    word-wrap: break-word;
+
+}
+
+.con_box-title {
+    border-bottom: 5px double rgb(255, 255, 255);
+
+}
+
+.con_box p,
+h3 {
+    text-align: center;
+    color: white;
+    padding: 0 30px;
+
+}
+
+.big_img img,
+.big_img video {
+    width: 100%;
+    
+}
+.big_img{
+    display: flex;
+    justify-content: center;
+}
+iframe{
+    max-width: 100%;
+
+}
+
+.title {
+    background-color: #61747E;
+    width: 100%;
+    height: 100px;
+    z-index: 10;
+    box-shadow: 10px 10px 20px rgb(0, 0, 0, 0.5);
+    position: relative;
+}
+.title .two{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+}
+.logo {
+    width: 60px;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    
+}
+.title-text{
+    color: white;
+    margin: 10px;
+}
+
+.H {
+    color: #b8a555;
+    font-weight: bold;
+}
+
+.button{
+    width: 150px;
+    padding: 5px 10px;
+    margin: 0px;
+    border: 3px double #525252;
+    color: #525252;
+    cursor: pointer;
+}
+
+.button:hover {
+    border: 3px double #ffffff;
+    background-color: #b8a555;
+    color: white;
+}
+
+
+@media (max-width:700px) {
+    .about {
+        width: 80%;
+        margin: 0 auto;
+      }
+}
+
+@media (max-width:1024px) {
+        .button{
+            border: 3px double #ffffff;
+            background-color: #b8a555;
+            color: white;
+        }
+}
