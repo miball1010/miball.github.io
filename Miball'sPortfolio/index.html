@@ -12,6 +12,13 @@
   .title-img {
     position: relative;
   }
+
+  .title-img img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+
   .logo {
     width: 60px;
     border-radius: 50px;
@@ -20,7 +27,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
     cursor: pointer;
-}
+  }
+
   .text {
     color: white;
     text-align: center;
@@ -59,13 +67,18 @@
     padding: 20px;
     text-align: center;
     border: 3px dotted rgba(176, 176, 42, 0.371);
-    border-radius: 50px 0 ;
+    border-radius: 50px 0;
   }
 
   .skill div {
-    width: 30%;
+    width: 200px;
     display: inline-block;
     vertical-align: top;
+    margin-top: 10px;
+  }
+
+  .me {
+    padding: 10px;
   }
 
   .bottom {
@@ -83,8 +96,8 @@
 
   .image-container {
     box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.285);
-    width: 250px;
-    height: 250px;
+    width: 225px;
+    height: 225px;
     position: relative;
     margin: 10px;
   }
@@ -127,6 +140,9 @@
     .about .top div {
       margin: 10px 10px;
     }
+  }
+
+  @media (max-width:1180px) {
 
     .overlay,
     .text-overlay {
@@ -142,7 +158,7 @@
   </div>
 
   <div class="title-img">
-    <img src="img/bg.jpg" alt="" style=" width: 100%;">
+    <img src="img/bg.jpg" alt="">
     <div class="text">Miball's portfolio</div>
   </div>
 
@@ -156,7 +172,7 @@
         <h4> <span class="H">|社團經歷</span>&nbsp輔導義工 關懷組副組長</h4>
         <h4> <span class="H">|駕照</span>&nbsp汽車</h4>
         <h4> <span class="H">|專長</span>&nbsp畫畫</h4>
-        <h4> <span class="H">|興趣</span>&nbsp看日劇、玩電玩</h4>
+        <h4> <span class="H">|興趣</span>&nbsp看日劇、玩解謎遊戲</h4>
       </div>
     </div>
 
@@ -167,18 +183,23 @@
           <p><span class="H"> |程式</span> <br> Unity<br>C++<br> C# <br> HTML <br> CSS <br>Javascript</p>
         </div>
         <div>
-          <p><span class="H"> |設計</span> <br> Photoshop<br>Illustrator<br>Premiere Pro<br>After Effects <br>Figma<br>Blender</p>
+          <p><span class="H"> |設計</span> <br> Photoshop<br>Illustrator<br>Premiere Pro<br>After Effects
+            <br>Figma<br>Blender</p>
         </div>
         <div>
           <p><span class="H"> |外語</span><br> 英語 多益615分 <br> 日語</p>
         </div>
       </div>
 
-      <p>&nbsp&nbsp
-        大學期間最想要做的是加入服務性質的社團，我在這段期間籌劃社團博覽會及團內聖誕趴的活動，從中學到如何撰寫企劃書、招募工作人員、安排工作內容，並按時開會監督，最後在活動結束後進行檢討，有效的分工合作能使團內氣氛更好。</p>
-      <br>
-      <p>&nbsp&nbsp
-        從2020年1月持續到現在，我在蝦皮販售二手物共得到149顆五星及2顆四星，從中學會如何與客人溝通及判斷殺價是否合理，而客人給予用心包裝、出貨快速等的正向回饋，讓我覺得能夠將自己不需要的東西傳給下一個會珍惜的人很好。</p>
+      <div class="me">
+        <p>&nbsp&nbsp
+          大學期間最想要做的是加入服務性質的社團，我在這段期間籌劃社團博覽會及團內聖誕趴的活動，從中學到如何撰寫企劃書、招募工作人員、安排工作內容，並按時開會監督，最後在活動結束後進行檢討，有效的分工合作能使團內氣氛更好。</p>
+        <br>
+        <p>&nbsp&nbsp
+          從2020年1月持續到現在，我在蝦皮販售二手物共得到149顆五星及2顆四星，從中學會如何與客人溝通及判斷殺價是否合理，而客人給予用心包裝、出貨快速等的正向回饋，讓我覺得能夠將自己不需要的東西傳給下一個會珍惜的人很好。
+        </p>
+
+      </div>
 
     </div>
 
@@ -252,7 +273,7 @@
         </a>
       </div>
 
-      
+
 
     </div>
   </div>

@@ -9,7 +9,7 @@ body {
 }
 
 .footer {
-    background-color: rgb(86, 86, 86);
+    background-color: rgba(0, 0, 0, 0.574);
     width: 100%;
     height: 100px;
     position: relative;
@@ -92,7 +92,7 @@ iframe{
 }
 
 .title {
-    background-color: #61747E;
+    background-color: #45535bb7;
     width: 100%;
     height: 100px;
     z-index: 10;
@@ -128,16 +128,25 @@ iframe{
     width: 150px;
     padding: 5px 10px;
     margin: 0px;
-    border: 3px double #525252;
-    color: #525252;
-    cursor: pointer;
-}
-
-.button:hover {
     border: 3px double #ffffff;
     background-color: #b8a555;
     color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
 }
+
+.button:hover {
+    border: 3px double #525252;
+    color: #525252;
+   background-color: white;
+   transition: 0.3s ease;
+}
+
+.yt {
+    width: 100%;
+    height: 400px;
+}
+
 
 
 @media (max-width:700px) {
@@ -145,9 +154,13 @@ iframe{
         width: 80%;
         margin: 0 auto;
       }
+      .yt {
+        width: 100%;
+        height: 200px;
+    }
 }
 
-@media (max-width:1024px) {
+@media (max-width:1180px) {
         .button{
             border: 3px double #ffffff;
             background-color: #b8a555;

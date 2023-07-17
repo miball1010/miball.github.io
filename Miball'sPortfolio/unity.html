@@ -8,12 +8,31 @@
     <link rel="icon" href="img/LOGO-1.jpg" type="image/x-icon">
     <link rel="stylesheet" href="css/new-all.css">
 </head>
+<style>
+    .container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .image-container {
+        margin: 10px;
+    }
+
+    .box {
+        border: #c0d4de 5px outset;
+        border-radius: 10px 0;
+        margin: 10px;
+        width: 100%;
+        padding: 20px;
+    }
+</style>
 
 <body>
     <div class="title">
         <div class="two">
             <a href="index.html"><img src="img/LOGO-1.jpg" alt="" class="logo"></a>
-        <span class="title-text">遊戲設計</span>
+            <span class="title-text">遊戲設計</span>
         </div>
     </div>
 
@@ -30,21 +49,55 @@
                 用鍵盤操作小蘋果移動、跳躍，滑鼠控制選擇。
                 蒐集蘋果並越過障礙物就可以過關，總共有三種不同的結局。</p>
         </div>
-        <div class="big_img"><iframe width="560" height="315" src="https://www.youtube.com/embed/3eAw3wVqRf4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-        <div class="story">
+        <div class="big_img"><iframe class="yt" src="https://www.youtube.com/embed/3eAw3wVqRf4"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+
+        <div class="container">
+
             <div class="box">
-
+                <div class="image-container"><img style="width: 100%;" src="img/unity-11.png" alt=""></div>
+                <div class="text-container">
+                    <p class="H">|故事背景</p>
+                    <p>小蘋果撿到一張如何變成熊的秘笈，他覺得如果他變成熊就有能力保護同伴，因此他決定踏上旅程。</p>
+                    </p>
+                </div>
             </div>
-
+            <div class="box">
+                <div class="image-container"><img style="width: 100%;" src="img/unity-13.png" alt=""></div>
+                <div class="text-container">
+                    <p class="H">|結局一(沒有找到寶物)</p>
+                    <p>最後還是一顆弱小的蘋果，無法保護同伴。</p>
+                    </p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image-container"><img style="width: 100%;" src="img/unity-14.png" alt=""></div>
+                <div class="text-container">
+                    <p class="H">|結局二(找到一個寶物)</p>
+                    <p>變成不是熊也不是蘋果的物種，被冒險途中遇到的嘲諷蘋果熊拉去環遊世界，開啟新生活。</p>
+                    </p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image-container"><img style="width: 100%;" src="img/unity-15.png" alt=""></div>
+                <div class="text-container">
+                    <p class="H">|結局三(找到兩個寶物)</p>
+                    <p>成功變成了熊，卻也受不了蘋果香甜的誘惑，被同伴們看到自己吃蘋果的模樣。</p>
+                    </p>
+                </div>
+            </div>
         </div>
+
     </div>
     <a href="index.html">
         <div class="footer">
             <p class="back">回首頁</p>
-          </div>
-        </a>
+        </div>
+    </a>
 
-   
+
 </body>
 
 </html>
