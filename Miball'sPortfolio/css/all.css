@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* border: #5574b8 solid 1px; */
+}
+p{
+    color: #434343;
+}
+body {
+   
+    background-image: url(../img/bg-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}

@@ -1,6 +1,10 @@
-body {
+*{
     margin: 0;
     padding: 0;
+    /* border: #5574b8 solid 1px; */
+}
+body {
+   
     background-image: url(../img/bg-1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -39,6 +43,7 @@ p {
 .about {
     width: 60%;
     margin: 0 auto;
+    padding-top: 100px;
 }
 
 .about .top {
@@ -92,12 +97,13 @@ iframe{
 }
 
 .title {
-    background-color: #45535bda;
+    background-color: rgba(255, 255, 255, 0.527);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.127);
     width: 100%;
     height: 100px;
     z-index: 10;
-    box-shadow: 10px 10px 20px rgb(0, 0, 0, 0.5);
-    position: relative;
+    position: fixed;
 }
 .title .two{
     position: absolute;
@@ -115,7 +121,7 @@ iframe{
     
 }
 .title-text{
-    color: white;
+    color: #434343;
     margin: 10px;
 }
 
