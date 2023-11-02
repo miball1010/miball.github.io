@@ -38,14 +38,15 @@
         filter: grayscale(100%);
         cursor: pointer;
         transition: 0.5s ease;
-       
+
     }
 
     .image-container img:hover {
         filter: grayscale(0%);
         transition: 0.5s ease;
     }
-    .image-container.zoomed img{
+
+    .image-container.zoomed img {
         filter: grayscale(0%);
         transition: 0.5s ease;
         padding: 0;
@@ -55,8 +56,13 @@
     @media (max-width:1180px) {
         .image-container img {
             filter: grayscale(0%);
+     
 
         }
+        .image-container {
+        width: 100%;
+        height: 100%;
+    }
     }
 </style>
 <script>
@@ -81,7 +87,7 @@
                 <a href="fyp.html">畢業製作</a>
                 <a href="unity.html">遊戲設計</a>
                 <a href="uxui.html">UX/UI</a>
-                <a href="drew.html">電腦繪圖</a>
+                <a href="drew.html">平面設計</a>
                 <a href="3d.html">3D建模</a>
                 <a href="video.html">影片剪輯</a>
             </div>
@@ -90,25 +96,40 @@
 
     <div class="about">
         <div class="con_box">
-            <h3 class="con_box-title">Photoshop/&nbspIllustrator/&nbspProcreate/&nbspMediBang<br>《電腦繪圖》<br><br></h3>
-            <p><br>使用不同軟體繪製不同風格的圖讓我覺得很有趣。</p>
+            <h3 class="con_box-title">Photoshop/&nbspIllustrator/&nbspProcreate/&nbspMediBang<br>《平面設計》<br><br></h3>
+            <p><br>使用不同軟體繪製不同風格的圖讓我覺得很有趣。
+            </p>
 
         </div>
         <div class="container">
+            <div class="image-container" onclick="big(this)">
+                <img src="img/img-8.jpg" alt="">
+            </div>
+            <div class="image-container" onclick="big(this)">
+                <img src="img/img-9.jpg" alt="">
+            </div>
+            <div class="image-container" onclick="big(this)">
+                <img src="img/img-10.jpg" alt="">
+            </div>
             <div class="image-container" onclick="big(this)">
                 <img src="img/img-1.jpg" alt="">
             </div>
             <div class="image-container" onclick="big(this)">
                 <img src="img/img-2.jpg" alt="">
-            </div> <div class="image-container" onclick="big(this)">
+            </div>
+            <div class="image-container" onclick="big(this)">
                 <img src="img/img-3.jpg" alt="">
-            </div> <div class="image-container" onclick="big(this)">
+            </div>
+            <div class="image-container" onclick="big(this)">
                 <img src="img/img-4.jpg" alt="">
-            </div> <div class="image-container" onclick="big(this)">
+            </div>
+            <div class="image-container" onclick="big(this)">
                 <img src="img/img-5.jpg" alt="">
-            </div> <div class="image-container" onclick="big(this)">
+            </div>
+            <div class="image-container" onclick="big(this)">
                 <img src="img/img-6.gif" alt="">
-            </div> <div class="image-container" onclick="big(this)">
+            </div>
+            <div class="image-container" onclick="big(this)">
                 <img src="img/img-7.jpg" alt="">
             </div>
         </div>
@@ -117,8 +138,8 @@
     <a href="index.html">
         <div class="footer">
             <p class="back">回首頁</p>
-          </div>
-        </a>
+        </div>
+    </a>
 </body>
 
 </html>
