@@ -56,8 +56,8 @@ p {
 }
 
 .header {
-    background-color: rgba(255, 255, 255, 0.527);
-    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(50px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.127);
     width: 100%;
     position: fixed;
@@ -66,14 +66,14 @@ p {
     z-index: 2;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     text-align: center;
-    padding-top: 10px;
 }
 
 .logo {
     width: 60px;
     border-radius: 50px;
-    margin-left: 30px;
+    margin: 10px 0 0 30px;
     cursor: pointer;
 }
 
@@ -83,14 +83,75 @@ p {
     margin-right: 30px;
 }
 
+.nav ul li {
+    display: inline-block;
+    position: relative;
+
+}
+
+.nav ul li ul {
+    display: none;
+    position: absolute;
+    margin-top: 1px;
+    top: 100%;
+    left: 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.127);
+    text-align: start;
+}
+
+.nav ul li ul li {
+    width: 150px;
+    background-color: white;
+    transition: 0.3s ease;
+}
+
+.nav ul li ul li a {
+    color: #b0c3cc;
+    padding: 20px 10px;
+    display: block;
+}
+
+.nav ul li ul li:hover {
+    background-color: #8e9da4;
+}
+
+.nav ul li ul li:hover>a {
+    color: white;
+}
+
 .nav a {
     text-decoration: none;
+    padding: 25px 15px 25px 15px;
     color: #434343;
-    margin-left: 30px;
 }
 
 .nav a:hover {
     color: #b0c3cc;
+}
+
+.down {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 15px 27px 15px;
+}
+.down i{
+    display: inline-block;
+    font-size: 10px;
+    margin-left: 3px;
+    color: #6a6a6a;
+}
+
+.down:hover {
+    color: #b0c3cc;
+}
+.down:hover>i {
+    color: #b0c3cc;
+}
+
+.down:hover>ul {
+    display: block;
 }
 
 .about {
@@ -173,7 +234,7 @@ iframe {
     padding: 5px 10px;
     margin: 0px;
     border: 3px double #ffffff;
-    background-color: #b0c3cc;
+    background-color: #8e9da4;
     color: white;
     cursor: pointer;
     transition: 0.3s ease;
@@ -201,7 +262,7 @@ iframe {
 
     .yt {
         width: 100%;
-        height: 200px;
+        height: auto;
     }
 }
 
@@ -227,8 +288,8 @@ iframe {
     }
 
     .button {
-        border: 3px double #ffffff;
-        background-color: #b0c3cc;
-        color: white;
+        border: 3px double #525252;
+        color: #525252;
+        background-color: white;
     }
 }

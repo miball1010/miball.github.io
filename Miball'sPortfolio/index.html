@@ -7,6 +7,8 @@
   <title>Miball's portfolio</title>
   <link rel="icon" href="img/LOGO-1.jpg" type="image/x-icon">
   <link rel="stylesheet" href="css/new-all.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 <style>
   .about {
@@ -29,12 +31,16 @@
     margin: 0px 50px 0px 0;
     border-radius: 10px;
     overflow: hidden;
+    opacity: 0;
+    box-shadow: #b0c3cc 0px 0px 10px;
+    animation: opacityAni 0.7s ease forwards;
   }
 
   .myImg img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
   }
 
   .introduce {
@@ -42,13 +48,13 @@
     width: 500px;
   }
 
-  .introduce div {
-    margin: 15px 0 10px 0;
-  }
-
   .name {
     font-size: 25px;
     font-weight: 800;
+  }
+
+  .nameSchool {
+    animation: slideL 0.7s forwards;
   }
 
   .titleText {
@@ -58,14 +64,85 @@
     color: #434343;
   }
 
+  .skillBox {
+    margin-top: 30px;
+    animation: slideR 0.7s forwards;
+
+  }
+
+  .manytext {
+    animation: slideD 0.7s forwards;
+
+  }
+
   .Yp {
     color: #b0c3cc;
   }
 
+  @keyframes slideL {
+    0% {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideR {
+    0% {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideD {
+    0% {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideU {
+    0% {
+      transform: translateY(-100px);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+
+  @keyframes opacityAni {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+
   @media (max-width:980px) {
     .box {
-      padding: 100px 0;
+      padding: 100px 0 50px 0;
       width: 100%;
+
     }
 
     .box a {
@@ -81,7 +158,9 @@
       backdrop-filter: blur(10px);
       margin: 0 auto;
       margin-top: 20px;
-
+      animation: slideU 0.5s forwards;
+      animation-delay: calc(var(--i) * 0.1s);
+      opacity: 0;
     }
   }
 </style>
@@ -92,55 +171,65 @@
       <a href="index.html"><img src="img/LOGO-2.jpg" alt="" class="logo"></a>
     </div>
     <div class="box">
-      <a href="web-kuan.html">網頁設計- <br> 年輕陶藝家</a>
-      <a href="web.html">網頁設計</a>
-      <a href="fyp.html">畢業製作</a>
-      <a href="unity.html">遊戲設計</a>
-      <a href="drew.html">平面設計</a>
-      <a href="3d.html">3D建模</a>
-      <a href="video.html">影片剪輯</a>
+
+      <a href="web-kuan.html" style="--i:1;">網頁設計- <br> 陶藝作品網站</a>
+      <a href="web.html" style="--i:2;">網頁設計- <br> 服飾購物網站</a>
+      <a href="fyp.html" style="--i:3;">畢業製作</a>
+      <a href="unity.html" style="--i:4;">遊戲設計</a>
+      <a href="drew.html" style="--i:5;">平面設計</a>
+      <a href="3d.html" style="--i:6;">3D建模</a>
+      <a href="video.html" style="--i:7;">影片剪輯</a>
     </div>
   </div>
   <div class="computer">
     <div class="header">
       <a href="index.html"><img src="img/LOGO-2.jpg" alt="" class="logo"></a>
       <div class="nav">
-        <a href="web-kuan.html">網頁設計-年輕陶藝家</a>
-        <a href="web.html">網頁設計</a>
-        <a href="fyp.html">畢業製作</a>
-        <a href="unity.html">遊戲設計</a>
-        <a href="drew.html">電腦繪圖</a>
-        <a href="3d.html">3D建模</a>
-        <a href="video.html">影片剪輯</a>
+        <ul>
+          <li class="down">網頁設計<i class='bx bxs-down-arrow'></i>
+            <ul>
+              <li><a href="web-kuan.html">陶藝作品網站</a></li>
+              <li><a href="web.html">服飾購物網站</a></li>
+            </ul>
+          </li>
+          <li><a href="fyp.html">畢業製作</a></li>
+          <li> <a href="unity.html">遊戲設計</a></li>
+          <li> <a href="drew.html">電腦繪圖</a></li>
+          <li><a href="3d.html">3D建模</a></li>
+          <li> <a href="video.html">影片剪輯</a>
       </div>
+      </li>
+      </ul>
     </div>
-
-
 
     <div class="about">
       <div class="aboutBox">
         <div class="myImg"><img src="img/me.jpg" alt=""></div>
         <div class="introduce">
-          <div class="name">
-            <p> 張亞芸<span class="Yp"> YA-YUN-CHANG</span></p>
-          </div>
-          <div>
-            <p>元智大學 資訊傳播學系 科技組</p>
-          </div>
-          <div>
-            <div>
-              <div class="titleText">程式</div>
-              <p>html + css + Javascript、C++、C#(for Unity)</p>
+          <div class="nameSchool">
+            <div class="name">
+              <p> 張亞芸<span class="Yp"> YA-YUN-CHANG</span></p>
             </div>
             <div>
+              <p>元智大學 資訊傳播學系 科技組</p>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skillBox">
+              <div class="titleText">程式</div>
+              <p>HTML、CSS、Javascript、jQuery、C++、C#(for Unity)</p>
+            </div>
+            <div class="skillBox">
               <div class="titleText">設計</div>
               <p>Figma、Photoshop、Illustrator、Premiere Pro、After Effects、Blender</p>
             </div>
-            <div class="titleText">外語</div>
-            <p>英語(多益615分)、日語</p>
+            <div class="skillBox">
+              <div class="titleText">外語</div>
+              <p>英語(多益615分)、日語</p>
+            </div>
           </div>
 
-          <div>
+          <div class="manytext">
             <br>
             <p>&nbsp&nbsp
               平時除了對設計有熱忱，也會鑽研程式。在學習的過程中我發現能夠解決程式上的問題是件很有成就感的事，
