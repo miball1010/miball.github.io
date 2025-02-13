@@ -1,0 +1,140 @@
+{
+    "works": [
+        {
+            "work_EN_title": "Web Design",
+            "work_CN_title": "網頁設計",
+            "work": [
+                {
+                    "key": "cny",
+                    "link": "cny",
+                    "img": "cny.jpg",
+                    "title": "新年抽獎網站",
+                    "text": [
+                        "主視覺設計",
+                        "layout設計",
+                        "程式"
+                    ]
+                },
+                {
+                    "key": "cop29",
+                    "link": "cop29",
+                    "img": "cop29.jpg",
+                    "title": "Cop29｜專題報導",
+                    "text": [
+                        "主視覺設計",
+                        "layout設計",
+                        "程式"
+                    ]
+                },
+                {
+                    "key": "goodbye",
+                    "link": "goodbye",
+                    "img": "goodbye.jpg",
+                    "title": "好好說再見｜專題報導",
+                    "text": [
+                        "layout設計",
+                        "程式"
+                    ]
+                }
+            ]
+        },
+        {
+            "work_EN_title": "Others",
+            "work_CN_title": "其他",
+            "work": [
+                {
+                    "key": "graphic",
+                    "link": "graphic",
+                    "img": "graphic.jpg",
+                    "title": "平面設計、手繪插畫"
+                },
+                {
+                    "key": "video",
+                    "link": "video",
+                    "img": "video.jpg",
+                    "title": "影音動畫"
+                }
+            ]
+        }
+    ],
+    "graphic":[
+        {
+            "name":"other-design-13",
+            "number":2,
+             "title":"Podcast宣傳貼文",
+            "text":"貼文為宣傳過年主題的Podcast內容。"
+        },
+        {
+            "name":"other-design-9",
+            "number":7,
+             "title":"懶人包",
+            "text":"懶人包擷取文章重點，以圖文並茂的方式呈現。"
+        },
+        {
+            "name":"other-design-10",
+            "number":3,
+             "title":"懶人包",
+            "text":"懶人包擷取文章重點，以圖文並茂的方式呈現。"
+        },
+        {
+            "name":"other-design-6",
+            "number":4,
+             "title":"podcast內廣",
+            "text":"印在週刊內的宣傳頁，以宣傳podcast內容為主"
+        },
+        {
+            "name":"other-design-1",
+            "number":1,
+            "title":"Podcast封面設計",
+            "text":"以財經為主題的podcast，因為「摩王」的諧音，所以設計成魔王的造型，穿著長袖西裝顯現專業及威嚴。"
+        },
+        {
+            "name":"other-design-7",
+            "number":1,
+             "title":"商品長圖",
+            "text":"放在官網商品頁中，除了將商品呈現好吃的樣貌外，也要介紹商品的原物料。"
+        },
+        {
+            "name":"other-design-8",
+            "number":1,
+             "title":"電商促銷 Banner",
+            "text":"清楚的排版讓吸引消費者購買。"
+        },
+        {
+            "name":"other-design-12",
+            "number":1,
+             "title":"宣傳告示",
+            "text":"設計給去陶博館製作彩繪DIY的小朋友看的告示，圖案色彩繽紛外也使用注音符號讓小朋友能閱讀。"
+        },
+        {
+            "name":"other-design-11",
+            "number":2,
+             "title":"拍貼邊框",
+            "text":"畢業製作時販售的產品，黑白款的人氣較高。"
+        },
+        {
+            "name":"other-design-5",
+            "number":1,
+             "title":"香氛書籤",
+            "text":"畢業製作時放在攤位的贈品，共四款，每一款書籤都有對應花香的味道，上方為花朵的花語，下方則為勵志小語，希望傳達正能量給所有拿到的人。"
+        },
+        {
+            "name":"other-design-4",
+            "number":1,
+            "title":"拿花的男孩",
+           "text":"畢業製作未使用插圖，使用鉛筆線搞、水彩上色。"
+        },
+        {
+            "name":"other-design-2",
+            "number":1,
+             "title":"櫻花樹下",
+            "text":"看到校園中的櫻花樹，而延伸出的虛構情景。"
+        },
+        {
+            "name":"other-design-3",
+            "number":1,
+            "title":"米熊",
+           "text":"以厚塗的方式繪製。"
+        }
+    ]
+}
