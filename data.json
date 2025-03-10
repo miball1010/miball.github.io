@@ -5,6 +5,17 @@
             "work_CN_title": "網頁設計",
             "work": [
                 {
+                    "key": "woman",
+                    "link": "woman",
+                    "img": "woman.jpg",
+                    "title": "跨界真女子｜專題報導",
+                    "text": [
+                        "主視覺設計",
+                        "layout設計",
+                        "程式"
+                    ]
+                },
+                {
                     "key": "cny",
                     "link": "cny",
                     "img": "cny.jpg",
