@@ -1,0 +1,1 @@
+import{u as o,s as r,c as t,r as n,F as c,o as l,a as u,b as p}from"./index-C6vcBXld.js";const _=["src","alt"],f={__name:"WebCop29",setup(i){const s=o(),{isDev:a}=r(s);return(m,g)=>(l(),t(c,null,n(8,e=>u("img",{src:`${p(a)?"/images/":"images/"}web-cop29-${e}.jpg`,alt:`Cop29-${e}`,loading:"lazy",key:e},null,8,_)),64))}};export{f as default};
