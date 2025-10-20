@@ -1,4 +1,13 @@
 {
+    "skill": [
+        "vue",
+        "tailwind",
+        "figma",
+        "ps",
+        "ai",
+        "pr",
+        "ae"
+    ],
     "works": [
         {
             "work_EN_title": "Web Projects",
@@ -112,7 +121,7 @@
                     "link": "graphic",
                     "img": "graphic.jpg",
                     "title": "平面設計、手繪插畫",
-                    "text": "我從小就對繪畫充滿興趣，也是在不斷嘗試與失敗中逐步成長。<br>在美感上，我偏好乾淨、低飽和的風格，希望能透過簡潔卻不失溫度的畫面傳遞情感。<br>主要使用 Photoshop、Illustrator 與 Procreate 進行創作。",
+                    "text": "我從小就對繪畫充滿興趣，也是在不斷嘗試與失敗中逐步成長。<br>在美感上，我偏好乾淨、低飽和的風格，希望能透過簡潔卻不失溫度的畫面傳遞情感。主要使用 Photoshop、Illustrator 與 Procreate 進行創作。",
                     "tag": [
                         "Photoshop",
                         "Illustrator",
